@@ -4,18 +4,20 @@ clc;clear all;close all;
 
 %% ADLmatrix test - for homework3_1 Q1
 
-% graph = {
-%         {2,3},
-%         {1,4,6},
-%         {1,4},
-%         {2,5,3},
-%         {4,6},
-%         {2,5}
-%     };
-% [A,D,L] = ADLmatrix(graph);
-% [X,lambda] = eig(L);
+graph = {
+        {3,6},
+        {5,8},
+        {1,6,4},
+        {3,7,5},
+        {4,2,8},
+        {1,3,7},
+        {6,4,8},
+        {2,5,7}
+    };
+[A,D,L] = ADLmatrix(graph);
+[X,lambda] = eig(L);
 
 %% Flajolet-Martin method
-data = {4,5,6,10};
-
-diffNum = FlajoletMartin(data,@HashFunction);
+% data = {4,5,6,10};
+% 
+% diffNum = FlajoletMartin(data,@HashFunction);
